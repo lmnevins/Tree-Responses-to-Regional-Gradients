@@ -1,24 +1,15 @@
-# Tree-Responses-to-Complex-Gradients
+# Tree-Responses-to-Environmental-Gradients
 
-#Tree demographic and neighborhood responses to complex regional gradients of the northwestern United States
+#Tree demographic and neighborhood responses to regional environmental gradients of the northwestern United States
 
 #L. McKinley Nevins, Robert J. Smith, and Jenny Zambrano
 
-#Abstract:
-It is essential to understand the drivers of variation in tree demography to anticipate how forests will be 
-impacted by future climate conditions and disturbance regimes. Studies frequently include abiotic factors, 
-failing to account for plant-plant biotic interactions that can have significant impacts on demographic rates. 
-We combined data on two prominent environmental gradients, climatic moisture deficit and fire probability, 
-with modelled tree functional neighborhoods, to assess variation in survival and growth of tree species in 
-the northwestern US. We hypothesized 1) shifts toward increasing functional neighborhood diversity with 
-increasing environmental stress, and 2) variation of tree survival and growth in response to the interaction 
-of environment and functional neighborhoods. Functional neighborhoods changed along the environmental stress 
-gradients, with a shift from less trait-diverse to more trait-diverse neighborhoods as stress increased. Our 
-results suggest substantial species variation in survival and growth responses to the combined effects of 
-environmental variability and functional neighborhoods. In sum, our findings support that environmental 
-variation and biotic interactions jointly determine tree demography. Results of this study offer a different 
-perspective of tree species and community responses to variable environmental conditions necessary to better 
-anticipate responses to future climate and disturbance changes.
+#ABSTRACT 
+1.	Documenting how vegetation varies across large environmental gradients is foundational to understanding long-term persistence of forests under future climate conditions and disturbance regimes. Studies of drivers shaping forest communities frequently include abiotic or biotic factors, while their combined effects remain understudied. Here, we combined data on two prominent abiotic gradients, climatic moisture deficit and wildfire probability, along with tree functional neighborhoods (i.e., biotic effects of traits of close neighbors) to assess variation in survival and growth of 56 of the most abundant tree species in the northwestern US.
+2.	We asked two main questions: 1) How does functional neighborhood dissimilarity vary with environmental gradients? and 2) How does tree demography vary with the combined effects of environmental gradients and functional neighborhood? We expected functional neighborhoods to become more diverse as environmental stress increase, and to observe increased survival and growth in moist areas with lower wildfire probability and in more-diverse functional neighborhoods. 
+3.	We found that functional neighborhoods changed along the environmental gradients, with a shift from less diverse to more diverse neighborhoods as wildfire probability and moisture deficit increased. When we considered the combined effects of the environmental gradients and the functional neighborhood on tree survival and growth, we observed large variation in responses among species. This supports our prediction that environmental variation and plant-plant interactions jointly determine tree demography. However, many species exhibited opposing effects of moisture deficit and wildfire probability on their demographic responses, and more significant responses were observed in the most abundant tree species considered. 
+4.	Synthesis Findings of this study show that climate and plant-plant interactions jointly impact tree demography, however, species vary in their responses to variation of both factors. Therefore, it is critical to consider variation both between and within tree species to adequately understand forest responses to future environmental changes. Results of this study offer a different perspective of tree species responses to variable environmental conditions necessary to better anticipate responses to future climate and disturbance changes.
+
 
 ##Novel Code:
 All scripts used for data preparation, analyses, and modeling are included here. 
