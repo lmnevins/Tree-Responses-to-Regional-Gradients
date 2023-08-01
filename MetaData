@@ -1,0 +1,44 @@
+Supporting Information to the article Nevins, L. M. and J. Zambrano. Tree demographic and neighborhood responses to regional environmental gradients of the northwestern United States. Journal of Ecology.
+
+METADATA
+
+All scripts are under a GNU General Public License, Version 3.0. 
+
+All analyses were performed in R version 4.2.1. 
+
+File Names & Description
+
+01_data-processing-fiadb-enviro-gradients.R	-- Processing data from the Forest Inventory and Analysis Program (FIA), publicly available at:     https://apps.fs.usda.gov/fia/datamart/ . Compiling data for the environmental gradients of climatic moisture deficit and wildfire probability. Calculating the neighborhood crowding index coefficients. 
+
+02_data-processing-trydb.R -- Processing trait data from the TRY database, publicly available at: www.try-db.org
+
+03_data-processing-usda-plants.R -- Processing trait data from the USDA PLANTS database, publicly available at: http://plants.usda.gov
+
+04_enviro-maps-Fig1.R	-- Mapping the environmental gradients of climatic moisture deficit and wildfire probability across the study region. Basis of Fig. 1. 
+
+05_data-processing-phylogeny.R -- Building a phylogenetic tree of the 56 tree species using the package `V.PhyloMaker’. Using the processed FIA data. 
+
+06_Rphylopars.R	-- Using the package ‘Rphylopars’ to impute missing trait data. Using processed functional trait data, FIA tree demography data, and the constructed phylogenetic tree. 
+
+07_principal-components-analysis.R	-- Conducting principal components analyses (PCA) of the complete functional trait data produced via imputation. Plotting the results as the basis of Fig. 2. 
+
+08_determine-neighbors.R -- Calculating the neighborhood crowding index (NCI) using FIA data. 
+
+09_functional-neighborhood-alltraits.R	-- Building the neighborhood crowding index of similarity (NCIS) using the calculated NCI and complete functional trait data. Calculated similarity values for all functional traits. 
+
+10_calculating-SES.R	-- Calculating standard effect sizes (SES) for each tree from the NCIS. 
+
+11_trait-distance-matrix.R	-- Calculating trait similarity and hierarchical trait distances using the complete functional trait data and PCA results. 
+
+12_trait-heirarchy.R	-- Building a full trait hierarchy using the NCI, the calculated hierarchical trait distances, and the complete functional trait data. 
+
+13_regressions-Fig3.R	-- Performing regressions of the neighborhood crowding index (NCI), and the PC1 and PC2 functional neighborhoods across the environmental gradients of climatic moisture deficit and wildfire probability. Plotting the results as the basis for Fig. 3. 
+
+14_generate-demography-datasets.R	-- Generating formatted datasets for survival and growth for use in the mixed effects models. 
+
+15_bootstrap-survival-analyze-results.R	-- Performing bootstrapping of the mixed effects models of survival for climatic moisture deficit and wildfire probability. Analyze the results and calculate effect sizes for the fixed effects, as the basis for the survival results in Fig. 4 and Fig. 5. 
+
+16__bootstrap-growth-analyze-results.R	-- Performing bootstrapping of the mixed effects models of growth for climatic moisture deficit and wildfire probability. Analyze the results and calculate effect sizes for the fixed effects, as the basis for the growth results in Fig. 4 and Fig. 5.
+
+17_responses-appendixS3-FigS1-S4.R	-- Plotting species-specific demographic responses in three categories of functional neighborhood dissimilarity, across the gradients of climatic moisture deficit and wildfire probability. Basis for Fig. S1-S4 in Appendix S3. 
+
