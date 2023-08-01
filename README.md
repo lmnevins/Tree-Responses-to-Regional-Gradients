@@ -1,4 +1,4 @@
-# Tree-Responses-to-Environmental-Gradients
+# Tree-Responses-to-Regional-Gradients
 
 #Tree demographic and neighborhood responses to regional environmental gradients of the northwestern United States
 
@@ -13,5 +13,6 @@
 
 ##Novel Code:
 All scripts used for data preparation, analyses, and modeling are included here. 
+See MetaData for descriptions. 
 
 
