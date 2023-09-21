@@ -40,5 +40,5 @@ File Names & Description
 
 16__bootstrap-growth-analyze-results.R	-- Performing bootstrapping of the mixed effects models of growth for climatic moisture deficit and wildfire probability. Analyze the results and calculate effect sizes for the fixed effects, as the basis for the growth results in Fig. 4 and Fig. 5.
 
-17_responses-appendixS3-FigS1-S4.R	-- Plotting species-specific demographic responses in three categories of functional neighborhood dissimilarity, across the gradients of climatic moisture deficit and wildfire probability. Basis for Fig. S1-S4 in Appendix S3. 
+17_responses-appendixS3-FigS1-S4.R	-- Plotting species-specific demographic responses in scatterplots in three categories of functional neighborhood dissimilarity, across the gradients of climatic moisture deficit and wildfire probability. Basis for Fig. S1-S4 in Appendix S3. 
 
