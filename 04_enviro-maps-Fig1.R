@@ -2,7 +2,7 @@
 #
 #  Tree Responses to Regional Gradients -- Mapping Gradients for Figure 1
 #
-#  L. McKinley Nevins, laura.nevins@wsu.edu, 11 Nov, 2022
+#  L. McKinley Nevins, laura.nevins@wsu.edu, 31 Aug., 2023
 #
 ##      GNU General Public License, Version 3.0    ###################
 
@@ -140,3 +140,9 @@ ggplot(p, aes(x = lon, y = lat)) +
   theme_classic()
 
 dev.off()
+
+
+##mapping the larger study area#########3 
+
+maps::map(database = 'world', boundary = TRUE, xlim=c(-135,-107.5), ylim=c(20.0,60.0), col = "gray", interior = TRUE, fill=TRUE)
+map.axes()
