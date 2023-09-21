@@ -105,7 +105,7 @@ trees <-  tidyr::drop_na(trees) #removes
 ##PC1 functional neighborhood 
 #cmdlog --- adjusted r squared 0.184
 cmdxpc1_plot <- ggplot(trees, aes(x = cmdlog, y = plt_ses_pc1)) +
-  geom_point(color = "grey") +
+  geom_point(color = "grey", alpha = 0.3) +
   geom_smooth(method = lm, color = 'red', se = TRUE, fill = 'lightblue') +
   xlim(1.4, 2.5) +
   xlab('log10 CMD') + 
@@ -120,7 +120,7 @@ summary(cmdxpc1_mod)
 
 #fireprob --- adjusted r squared 0.0868
 firexpc1_plot <- ggplot(trees, aes(x = firelog, y = plt_ses_pc1)) +
-  geom_point(color = "grey") +
+  geom_point(color = "grey", alpha = 0.3) +
   geom_smooth(method = lm, color = 'red', se = TRUE, fill = 'lightblue') +
   xlim(0.0, 0.35) +
   xlab('Wildfire Probability') + 
@@ -136,7 +136,7 @@ summary(firexpc1_mod)
 ##PC2 functional neighborhood 
 #cmdlog --- adjusted r squared 0.0009
 cmdxpc2_plot <- ggplot(trees, aes(x = cmdlog, y = plt_ses_pc2)) +
-  geom_point(color = "grey") +
+  geom_point(color = "grey", alpha = 0.3) +
   geom_smooth(method = lm, color = 'red', se = TRUE, fill = 'lightblue') +
   xlim(1.4, 2.5) +
   xlab('log10 CMD') + 
@@ -151,7 +151,7 @@ summary(cmdxpc2_mod)
 
 #fireprob --- adjusted r squared 0.0017
 firexpc2_plot <- ggplot(trees, aes(x = firelog, y = plt_ses_pc2)) +
-  geom_point(color = "grey") +
+  geom_point(color = "grey", alpha = 0.3) +
   geom_smooth(method = lm, color = 'red', se = TRUE, fill = 'lightblue') +
   xlim(0.0, 0.35) +
   xlab('Wildfire Probability') + 
@@ -168,7 +168,7 @@ summary(firexpc2_mod)
 
 #cmdlog --- adjusted r squared  0.0000
 cmdxnci_plot <- ggplot(trees, aes(x = cmdlog, y = plt_nci)) +
-  geom_point(color = "grey") +
+  geom_point(color = "grey", alpha = 0.3) +
   geom_smooth(method = lm, color = 'red', se = TRUE, fill = 'lightblue') +
   xlim(1.4, 2.5) +
   xlab('log10 CMD') + 
@@ -183,7 +183,7 @@ summary(cmdxnci_mod)
 
 #fireprob --- adjusted r squared 0.0000
 firexnci_plot <- ggplot(trees, aes(x = firelog, y = plt_nci)) +
-  geom_point(color = "grey") +
+  geom_point(color = "grey", alpha = 0.3) +
   geom_smooth(method = lm, color = 'red', se = TRUE, fill = 'lightblue') +
   xlim(0.0, 0.35) +
   xlab('Wildfire Probability') + 
