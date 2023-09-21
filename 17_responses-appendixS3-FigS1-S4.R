@@ -183,54 +183,54 @@ surv_15$spp <- factor(surv_15$spp, levels=rev(c("Juniperus occidentalis", "Caloc
 
 ######### Generating Plots########3
 
-#survival
+##survival
 #CMD
 surv_cmd_plot <- ggplot(data = surv_15, aes(x = cmdlog, y = surv, color = pc1cat)) +
-  geom_boxplot(show.legend = FALSE) +
-  facet_grid( ~ spp) +
+  geom_point(alpha = 0.5, show.legend = FALSE) +
+  geom_smooth(method = lm, color = 'red', se = TRUE, fill = 'gray', linewidth = 0.5) +
+  facet_wrap( ~ spp) +
   labs(x = "log10 CMD", y = "Survival") +
   theme_bw()
 
 surv_cmd_plot + theme(axis.text.y = element_text(size = 9)) + theme(axis.text.x = element_text(size = 9)) + 
-  theme(strip.text = element_text(face = "italic", size = 7)) +
+  theme(strip.text = element_text(face = "italic", size = 8)) +
   labs(color = "Functional Neighborhood") + scale_color_manual(values=c("darkorchid4", "maroon", "darkorange"))
 
 
-#Fire
+#fire
 surv_fire_plot <- ggplot(data = surv_15, aes(x = firelog, y = surv, color = pc1cat)) +
-  geom_boxplot(show.legend = FALSE) +
-  facet_grid( ~ spp) +
+  geom_point(alpha = 0.5, show.legend = FALSE) +
+  geom_smooth(method = lm, color = 'red', se = TRUE, fill = 'gray', linewidth = 0.5) +
+  facet_wrap( ~ spp) +
   labs(x = "Wildfire Probability", y = "Survival") +
   theme_bw()
 
 surv_fire_plot + theme(axis.text.y = element_text(size = 9)) + theme(axis.text.x = element_text(size = 9)) + 
-  theme(strip.text = element_text(face = "italic", size = 7)) +
+  theme(strip.text = element_text(face = "italic", size = 8)) +
   labs(color = "Functional Neighborhood") + scale_color_manual(values=c("darkorchid4", "maroon", "darkorange"))
 
 
-
-#growth
+##growth
 #CMD
 growth_cmd_plot <- ggplot(data = growth_15, aes(x = cmdlog, y = rgr, color = pc1cat)) +
-  geom_boxplot(show.legend = FALSE) +
-  facet_grid( ~ spp) +
-  labs(x = "log10 CMD", y = "Growth") +
+  geom_point(alpha = 0.5, show.legend = FALSE) +
+  geom_smooth(method = lm, color = 'red', se = TRUE, fill = 'gray', linewidth = 0.5) +
+  facet_wrap( ~ spp) +
+  labs(x = "log10 CMD", y = "Relative Growth Rate") +
   theme_bw()
 
 growth_cmd_plot + theme(axis.text.y = element_text(size = 9)) + theme(axis.text.x = element_text(size = 9)) + 
-  theme(strip.text = element_text(face = "italic", size = 7)) +
+  theme(strip.text = element_text(face = "italic", size = 8)) +
   labs(color = "Functional Neighborhood") + scale_color_manual(values=c("darkorchid4", "maroon", "darkorange"))
 
-
-#Fire
+#fire
 growth_fire_plot <- ggplot(data = growth_15, aes(x = firelog, y = rgr, color = pc1cat)) +
-  geom_boxplot(show.legend = FALSE) +
-  facet_grid( ~ spp) +
-  labs(x = "Wildfire Probability", y = "Growth") +
+  geom_point(alpha = 0.5, show.legend = FALSE) +
+  geom_smooth(method = lm, color = 'red', se = TRUE, fill = 'gray', linewidth = 0.5) +
+  facet_wrap( ~ spp) +
+  labs(x = "Wildfire Probability", y = "Relative Growth Rate") +
   theme_bw()
 
 growth_fire_plot + theme(axis.text.y = element_text(size = 9)) + theme(axis.text.x = element_text(size = 9)) + 
-  theme(strip.text = element_text(face = "italic", size = 7)) +
+  theme(strip.text = element_text(face = "italic", size = 8)) +
   labs(color = "Functional Neighborhood") + scale_color_manual(values=c("darkorchid4", "maroon", "darkorange"))
-
-
